@@ -1,20 +1,25 @@
 import './Header.css'
 import Options from '../assets/options-scroll.svg';
 import {Link} from 'react-scroll';
-import {UseState, useState} from 'react';
+import {useState} from 'react';
 
 function Header(){
     const[fix, setFix] = useState(false);
 
     function setFixed(){
-        
+        if (window.pageYOffset > 2){
+            setFix(true);
+        } else {
+            setFix(false);
+        }
     }
- 
+
+    window.addEventListener("scroll", setFixed);
     return(
-        <header id="header-body"> 
+        <header className={fix ? 'header-body fixed' : 'header-body'}> 
 
             <Link 
-                className="home"
+                className={fix ? 'home fixed' : 'home'}
                 to="image-background" 
                 spy={true} 
                 smooth={true} 
@@ -24,7 +29,7 @@ function Header(){
                 Home
             </Link>
             <Link 
-                className="projetos" 
+                className={fix ? 'projetos fixed' : 'projetos'}
                 to="secaoProjeto" 
                 spy={true} 
                 smooth={true} 
@@ -34,7 +39,7 @@ function Header(){
                 Projetos
             </Link>
             <Link 
-                className="experiencia" 
+                className={fix ? 'experiencia fixed' : 'experiencia'}
                 to="secaoExperiencia" 
                 spy={true} 
                 smooth={true} 
