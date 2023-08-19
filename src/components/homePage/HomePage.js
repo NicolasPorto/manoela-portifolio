@@ -1,10 +1,6 @@
 import "./HomePage.css";
 import Header from "../header/Header";
 import Footer from "../footer/Footer";
-import LogoInsta from '../assets/instagram.svg';
-import LogoLinkedin from '../assets/linkedin.svg';
-import LogoWhats from '../assets/whatsapp.svg';
-import LogoEmail from '../assets/email.svg';
 import LineUm from '../assets/line-um.svg';
 import LineDois from '../assets/line-dois.svg';
 import ProjectScroll from "../projects-scroll/ProjectsScroll";
@@ -18,11 +14,9 @@ const HomePage = () => {
         <div className="home-body" />
         <img className="linha-um" src={LineUm} />
         
-        <Header/>
-        
         {/* SUB TITULOS */}
-        <b id="projetos" className="projetos1">Projetos</b>
-        <b className="experiencia1">Experiencia</b>
+        <b className="secaoProjeto">Projetos</b>
+        <b className="secaoExperiencia">Experiencia</b>
         {/* SUB TITULOS */}
         
         {/* SOBRE */}
@@ -45,10 +39,10 @@ const HomePage = () => {
         <img className="linha-dois" src={LineDois} />
 
         <div className="grupo-icones">
-            <img src={LogoInsta} alt="Instagram" className="insta"/>
-            <img src={LogoLinkedin} alt="Linkedin" className="linkedin"/>
-            <img src={LogoWhats} alt="WhatsApp" className="whats"/>
-            <img src={LogoEmail} alt="E-mail" className="email"/>
+            <a href="https://www.instagram.com/mawgsh/" target="_blank"><img src="./images/insta.png" alt="Instagram" className="insta"/></a>
+            <a href="https://www.linkedin.com/in/mawgsh/" target="_blank"><img src="./images/linkedin.png" alt="Linkedin" className="linkedin"/></a>
+            <a href="https://wa.me/554189017474" target="_blank"><img src="./images/whats.png" alt="WhatsApp" className="whats"/></a>
+            <a href="mailto:mano.oelasz@gmail.com" target="_blank"><img src="./images/email.png" alt="E-mail" className="email"/></a>
         </div>
         
         <Footer/>
@@ -59,6 +53,8 @@ const HomePage = () => {
         <i className="gomes">Gomes</i>
         <b className="manoela">Manoela</b>
         {/* TITULO */}
+
+        <Header/>
     </div>
   );
 };

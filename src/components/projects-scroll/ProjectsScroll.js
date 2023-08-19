@@ -4,7 +4,7 @@ import BotaoRight from '../assets/botao-right.svg';
 
 const ProjectScroll = () => {
     return(
-        <heade>
+        <header>
             <div className="project-element-body" />
             <div className="experiencia-body" />
             <div className="home-page-web-child1" />
@@ -14,8 +14,7 @@ const ProjectScroll = () => {
             <div className="home-page-web-child5" />
             <img className="home-page-web-child6" src={BotaoLeft} />
             <img className="home-page-web-child7" src={BotaoRight} />
-
-        </heade>
+        </header>
     )
 }
 
