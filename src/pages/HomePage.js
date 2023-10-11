@@ -11,7 +11,20 @@ function HomePage() {
             <Header/>
             <main id="main">
                 <Projects/>
-                <Services/>
+
+                <div className="site-section">
+                    <div className="container">
+                        
+                        <div className="row justify-content-center text-center mb-4">
+                            <div className="col-5">
+                                <h3 className="h3 heading">Meus Serviços</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit explicabo inventore.</p>
+                            </div>
+                        </div>
+                        <Services/>
+                    </div>
+                </div>
+
                 <About/>
             </main>
             <Footer/>

@@ -31,7 +31,7 @@ function About() {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
                             explicabo inventore.</p>
                         </blockquote>
-                        <p> Jean Hicks</p>
+                        <p> Manoela Monteiro Gomes</p>
                         </div>
                     </div>
                     <div className="testimonial-wrap">

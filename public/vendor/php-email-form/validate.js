@@ -105,11 +105,17 @@ jQuery(document).ready(function($) {
     this_form.find('.error-message').slideUp();
     this_form.find('.loading').slideDown();
     
+    console.log(action);
+    console.log(str);
+
     $.ajax({
-      type: "POST",
+      method: "POST",
       url: action,
       data: str,
+      processData: false,
+      contentType: false,
       success: function(msg) {
+        console.log(msg);
         if (msg == 'OK') {
           this_form.find('.loading').slideUp();
           this_form.find('.sent-message').slideDown();

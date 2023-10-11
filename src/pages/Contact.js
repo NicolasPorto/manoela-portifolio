@@ -5,25 +5,6 @@ import Footer from '../components/Footer.js'
 
 function Contact(){
     AOS.init();
-    const enviarEmail = async () => {
-        try {
-          const response = await fetch("/enviar-email", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            }
-          });
-      
-          if (response.ok) {
-            const responseData = await response.json();
-            console.log(responseData.message);
-          } else {
-            console.error("Erro ao enviar o email.", response);
-          }
-        } catch (error) {
-          console.error("Erro ao enviar o email:", error);
-        }
-      };
     return(
        <>
        <Header/>
@@ -41,7 +22,7 @@ function Contact(){
 
                     <div className="row">
                         <div className="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
-                            <form onSubmit={enviarEmail} className="php-email-form">
+                            <form action="forms/contact.php" method="post" role="form" className="php-email-form">
                                 <div className="row">
                                     <div className="col-md-6 form-group">
                                         <label htmlFor="name">Nome</label>
@@ -68,7 +49,7 @@ function Contact(){
                                     <div className="sent-message">Sua mensagem foi enviada. Obrigada!</div>
                                     </div>
                                         <div className="col-md-6 form-group">
-                                        <input type="submit" className="readmore d-block w-100"  onClick={enviarEmail} defaultValue="Send Message" />
+                                        <input type="submit" className="readmore d-block w-100" defaultValue="Send Message" />
                                     </div>
                                 </div>
                             </form>

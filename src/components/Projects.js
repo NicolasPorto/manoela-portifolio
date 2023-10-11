@@ -37,46 +37,46 @@ function Projects() {
                     <div className="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
                         <a href="/projeto-unico" className="item-wrap fancybox">
                             <div className="work-info">
-                                <h3>Build Indoo</h3>
-                                <span>Photography</span>
+                                <h3>Maçã</h3>
+                                <span>picture</span>
                             </div>
-                            <img className="img-fluid" alt="" src="images/img_2.jpg"></img>
+                            <img className="img-fluid" alt="" src="images/imagem2.jpg"></img>
                         </a>
                     </div>
                     <div className="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
                         <a href="/projeto-unico" className="item-wrap fancybox">
                             <div className="work-info">
-                                <h3>Cocooil</h3>
-                                <span>Branding</span>
+                                <h3>Maçã</h3>
+                                <span>picture</span>
                             </div>
-                            <img className="img-fluid" alt="" src="images/img_3.jpg"></img>
+                            <img className="img-fluid" alt="" src="images/imagem3.jpg"></img>
                         </a>
                     </div>
                     <div className="item design col-sm-6 col-md-4 col-lg-4 mb-4">
                         <a href="/projeto-unico" className="item-wrap fancybox">
                             <div className="work-info">
-                                <h3>Nike Shoe</h3>
-                                <span>Design</span>
+                                <h3>Maçã</h3>
+                                <span>picture</span>
                             </div>
-                            <img className="img-fluid" alt="" src="images/img_4.jpg"></img>
+                            <img className="img-fluid" alt="" src="images/imagem4.jpg"></img>
                         </a>
                     </div>
                     <div className="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
                         <a href="/projeto-unico" className="item-wrap fancybox">
                             <div className="work-info">
-                                <h3>Kitchen Sink</h3>
-                                <span>Photography</span>
+                                <h3>Maçã</h3>
+                                <span>picture</span>
                             </div>
-                            <img className="img-fluid" alt="" src="images/img_5.jpg"></img>
+                            <img className="img-fluid" alt="" src="images/imagem5.jpg"></img>
                         </a>
                     </div>
                     <div className="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
                         <a href="/projeto-unico" className="item-wrap fancybox">
                             <div className="work-info">
-                                <h3>Amazon</h3>
-                                <span>brandingn</span>
+                                <h3>Maçã</h3>
+                                <span>picture</span>
                             </div>
-                            <img className="img-fluid" alt="" src="images/img_6.jpg"></img>
+                            <img className="img-fluid" alt="" src="images/imagem5.jpg"></img>
                         </a>
                     </div>
                 </div>

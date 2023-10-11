@@ -12,8 +12,6 @@ function Header() {
     const [contato, setIsContato] = useState(false);
 
     useEffect(() => {
-        // Verifique a rota atual e atualize a variável conforme necessário
-        console.log(location.pathname);
         setIsSobre(location.pathname === "/sobre-mim");
         setIsServicos(location.pathname === "/meus-servicos");
         setIsProjetos(location.pathname === "/projetos");
@@ -26,7 +24,7 @@ function Header() {
             <div className="collapse navbar-collapse custom-navmenu" id="main-navbar">
                 <div className="container py-2 py-md-5">
                     <div className="row align-items-start">
-                        <div className="teste col-md-2">
+                        <div className="col-md-2">
                             <ul className="custom-menu">
                                 <li className={home ? 'active' : ''}><a href="/">home</a></li>
                                 <li className={sobre ? 'active' : ''}><a href="/sobre-mim">sobre mim</a></li>
